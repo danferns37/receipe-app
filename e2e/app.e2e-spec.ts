@@ -7,8 +7,25 @@ describe('recipe-app App', () => {
     page = new RecipeAppPage();
   });
 
-  it('should display message saying app works', () => {
+  it('should be able to manage and add details and delete same details in a recipe', () => {
     page.navigateTo();
-    expect(page.getParagraphText()).toEqual('app works!');
+    //expect(page.getParagraphText()).toEqual('app works!');
+    page.manageadddeleterecipe();
   });
+
+
+
+  it('should be able to manage and update details in a recipe', () => {
+    page.navigateTo();
+   
+    page.manageupdaterecipe();
+  });
+
+
+  it('should be able to add details  and clear details in a recipe', () => {
+    page.navigateTo();
+    
+    page.manageclearrecipedetails();
+  });
+
 });
