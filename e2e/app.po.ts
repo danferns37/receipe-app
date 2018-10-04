@@ -2,7 +2,7 @@ import { browser, element, by } from 'protractor';
 
 export class RecipeAppPage {
   navigateTo() {
-    return browser.get('/');
+    return browser.get('https://receipe-app.herokuapp.com/recipes');
   }
 
   manageadddeleterecipe(){
